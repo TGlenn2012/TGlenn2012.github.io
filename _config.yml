@@ -12,20 +12,20 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+title                    : "Terrell Glenn's Portfolio"
+# title_separator          : "-"
+# subtitle                 : "My Personal Website & Portfolio" # site tagline that appears below site title in masthead
+name                     : "Terrell Glenn"
+description              : "This website is going to serve as my personal portfolio for my work as a Ph.D Candidate and beyond!"
 url                      : "https://TGlenn2012.github.io/"
-baseurl                  : ""
+# baseurl                  : "/blog"
 repository               : "TGlenn2012/TGlenn2012.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : "/assets/images/TeaserPlaceHolder.png" # path of fallback teaser image 
+logo                     : "/assets/images/Logo.png" # path of logo image to display in the masthead
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -78,7 +78,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "TerrellGlenn13"
 facebook:
   username               :
   app_id                 :
@@ -89,7 +89,7 @@ og_image                 : # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links                  : # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -101,21 +101,21 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Terrell Kendall Glenn"
+  avatar           : "/assets/images/glenn_avatar.png" # path of avatar image 
+  bio              : "I am a doctoral candidate in the School of Mechanical Engineering at Purdue University! My research is in the field of Human-Computer Interaction (HCI) in which I study the way youth learn through Augmented Reality, Physical Prototyping, and the Internet of Things. Check out my projects to learn more about what I do!"
+  location         : "Indiana, USA"
+  email            : "glenn3@purdue.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "glenn3@purdue.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://linktr.ee/TerrellGlenn"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/TerrellGlenn13"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -124,14 +124,14 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "http://www.instagram.com/GlennsTheorem"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/TerrellGlenn13"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -147,12 +147,19 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "glenn3@purdue.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://linktr.ee/TerrellGlenn"
 
 
 # Reading Files
 include:
   - .htaccess
   - _pages
+  - _code-snippets
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -287,3 +294,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
