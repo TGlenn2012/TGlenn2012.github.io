@@ -5,7 +5,7 @@ main:
   - title: "About Me"
     url: /about-me/
   - title: "Resume"
-    url: /assets/Resume.pdf/
+    url: /assets/Resume.pdf
   - title: "Projects"
     url: /projects/
   # - title: "StoryMakAR"
